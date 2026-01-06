@@ -1,4 +1,11 @@
-# FTP (File Transfer Protocol)
+# Twin Wire
+
+* Twin-Wire is a secure, peer-assisted file transfer system designed to enable fast and controlled file sharing between users by combining modern HTTPS-based coordination with dedicated file transfer protocols such as FTPS.
+* Instead of routing large files through a central server, Twin-Wire uses a hybrid architecture where a trusted server handles authentication, authorization, and security policies, while the actual file transfer happens directly between clients. This approach reduces server load, improves transfer speeds, and maintains strong access control.
+* The system supports multiple client types (web and desktop), where one client can temporarily act as a file host while another downloads the file securely. All permissions, session validation, and security rules are managed centrally, ensuring safe and auditable transfers without exposing sensitive infrastructure.
+* Twin-Wire is built as a proof-of-concept for scalable, secure, and efficient peer-to-peer file distribution using a mix of HTTP-based control channels and protocol-optimized data channels.
+
+## FTP (File Transfer Protocol)
 
 * Use to transfer a file across the network
 * It uses a client-server model
@@ -44,6 +51,12 @@
 * uses SSH to securely transfer file
 
 ## TFTP
+
+* is a stripped back version of FTP. It provides a very simple way to transfer files quickly and efficiently.
+* Used the UDP port 69
+* It also does not have any of the bells and whistles of standard FTP
+* Authentication and encryption does not exist in TFTP.
+* TFTP should not be used when
 
 ## SWOT
 
